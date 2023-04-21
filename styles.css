@@ -1,0 +1,46 @@
+html,
+body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: rgb(28, 27, 34);
+  color: rgb(255, 255, 255);
+  padding: 0.5em 0.5em;
+  border-radius: 10px;
+}
+
+.calculator-header {
+  margin-bottom: 15px;
+}
+
+.button {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat();
+}
+
+button {
+  height: 45px;
+  width: 50px;
+  font-size: 12px;
+}
+
+.clear-button {
+  grid-column: span 2;
+  width: 100%;
+}
+
+.button-equals {
+  grid-column: span 2;
+  width: 100%;
+}
